@@ -41,6 +41,17 @@ header {
 .hero h1 {
   text-shadow: 0 6px 40px #000c;
 }
+/* L'eyebrow sta dentro l'h1 per portare le parole chiave senza cambiare l'aspetto */
+.hero h1 {
+  margin: 0 0 25px;
+}
+.hero h1 .eyebrow {
+  display: flex;
+  margin-bottom: 25px;
+  line-height: 1.4;
+  letter-spacing: 0.28em;
+  text-shadow: none;
+}
 .hero h1 em {
   background: linear-gradient(90deg, #f0d789, #d2ad48 60%, #a98a2e);
   -webkit-background-clip: text;

@@ -57,13 +57,21 @@
         ]
       }
     </script>
+    <noscript
+      ><style>
+        .members-stat {
+          display: none;
+        }
+      </style></noscript
+    >
     <link rel="stylesheet" href="css/01-base.css" />
     <link rel="stylesheet" href="css/02-members.css" />
     <link rel="stylesheet" href="css/03-header.css" />
     <link rel="stylesheet" href="css/04-world-new.css" />
     <link rel="stylesheet" href="css/05-mobile.css" />
     <link rel="stylesheet" href="css/06-polish.css" />
-    <link rel="stylesheet" href="css/07-footer.css" />
+    <link rel="stylesheet" href="css/07-faq.css" />
+    <link rel="stylesheet" href="css/08-footer.css" />
   </head>
   <body>
     <svg
@@ -143,8 +151,11 @@
     <main>
       <div class="hero" id="home">
         <div class="wrap">
-          <div class="eyebrow">Clan italiano milsim · Dal 2012</div>
-          <h1>ONE UNIT.<br /><em>ONE MISSION.</em></h1>
+          <h1>
+            <span class="eyebrow">Clan italiano milsim ArmA Reforger · Dal 2012</span>ONE UNIT.<br /><em
+              >ONE MISSION.</em
+            >
+          </h1>
           <p>
             Il campo di battaglia cambia. Lo spirito di squadra resta. Entra nei 9th Generic Unit e vivi operazioni
             milsim su <strong>ArmA Reforger</strong>, tra tattica, coordinazione e divertimento.
@@ -272,6 +283,65 @@
           </div>
         </div>
       </section>
+      <section id="faq">
+        <div class="wrap">
+          <div class="heading">
+            <div>
+              <div class="eyebrow">FAQ / Domande frequenti</div>
+              <h2>DUBBI SUL<br />CLAN?</h2>
+            </div>
+            <p>Le risposte alle domande che ci fanno più spesso prima di candidarsi ai 9th Generic Unit.</p>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>Quanti anni servono per entrare nei 9GU?</summary>
+              <p>Per candidarti devi aver compiuto 20 anni.</p>
+            </details>
+            <details>
+              <summary>Come mi candido al clan?</summary>
+              <p>
+                Entra nel nostro Discord e scrivi una presentazione nella sezione dedicata ai reclutamenti. I nostri
+                tutor scambieranno due chiacchiere con te: vogliamo conoscerti prima di accoglierti nella squadra.
+              </p>
+            </details>
+            <details>
+              <summary>Cosa mi serve per giocare con voi su ArmA Reforger?</summary>
+              <p>
+                Una copia originale di ArmA Reforger (su PC o console), un disco con spazio sufficiente per le MOD e
+                l'accesso a Discord, che usiamo per la community e per il reclutamento.
+              </p>
+            </details>
+            <details>
+              <summary>Come funziona l'ingresso e il mese di prova?</summary>
+              <p>
+                Con il via libera dell'Accademia ti viene assegnato un Tutor, che ti aiuta con le MOD, con il corso base
+                CAB e durante il mese di prova. Entrerai anche nella tua squadra Viking. Superato il periodo di prova
+                diventi ufficialmente un membro dei 9GU.
+              </p>
+            </details>
+            <details>
+              <summary>Che tipo di giocatori cercate?</summary>
+              <p>
+                Non ci interessa il numero di kill. Cerchiamo persone serie, mature e motivate a giocare in squadra:
+                simulazione, serietà e divertimento sono i nostri tre principi.
+              </p>
+            </details>
+            <details>
+              <summary>Da quanto tempo esistono i 9th Generic Unit?</summary>
+              <p>
+                Siamo un clan italiano milsim attivo dal 2012. Siamo nati su ArmA 3 e siamo passati di recente alla
+                nuova piattaforma ArmA Reforger.
+              </p>
+            </details>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://discord.gg/exF5aSwakn" rel="noopener" target="_blank"
+              >Fai la tua domanda su Discord<svg aria-hidden="true" class="ico ico-arrow">
+                <use href="#i-arrow-ur" /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
       <div class="banner">
         <div class="wrap">
           <div>
@@ -291,6 +361,10 @@
           <p class="members-description">
             Persone reali, spirito di squadra e passione per il milsim. Ogni operatore è parte della nostra identità.
           </p>
+          <p class="members-stat">
+            <span class="members-stat-num">0</span>
+            <span class="members-stat-label">operatori nella nostra squadra</span>
+          </p>
         </div>
       </section>
     </main>
@@ -305,7 +379,7 @@
           <div>
             <h4>LINK UTILI</h4>
             <div class="footerlinks">
-              <a href="#chi-siamo">Chi siamo</a><a href="#reclutamento">Reclutamento</a>
+              <a href="#chi-siamo">Chi siamo</a><a href="#reclutamento">Reclutamento</a><a href="#faq">FAQ</a>
               <a href="https://discord.gg/exF5aSwakn" rel="noopener" target="_blank">Discord</a>
               <a href="https://9thgenericunitshop.myspreadshop.it/" rel="noopener" target="_blank">Shop</a>
               <a href="https://dashboard.9thgenericunit.com" rel="noopener" target="_blank">Dashboard</a>
