@@ -1,0 +1,137 @@
+/* Il nostro mondo */
+.world-new {
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(490px, 39vw, 690px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 76px 0;
+  background: #000;
+}
+.world-new::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: url("../img/image_06.webp") center / 100% auto no-repeat;
+}
+.world-new::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.08) 40%, transparent 70%);
+}
+.world-new-content {
+  width: min(1160px, 90%);
+  margin-inline: auto;
+}
+.world-new-copy {
+  max-width: 540px;
+}
+.world-new-eyebrow {
+  font-family: Orbitron, sans-serif;
+  color: #d2ad48;
+  font-size: 14px;
+  letter-spacing: 0.25em;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.world-new h2 {
+  font-family: Orbitron, sans-serif;
+  font-size: clamp(37px, 4.5vw, 72px);
+  line-height: 1.09;
+  letter-spacing: -0.045em;
+  color: #f5f2e7;
+  margin: 0 0 27px;
+  font-weight: 800;
+}
+.world-new h2 span {
+  color: #d2ad48;
+}
+.world-new p {
+  font-size: clamp(15px, 1.3vw, 19px);
+  line-height: 1.75;
+  color: #ddd9cb;
+  max-width: 550px;
+  margin-bottom: 26px;
+}
+.world-new-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 17px 27px;
+  border: 1px solid #d2ad48;
+  border-radius: 28px;
+  background: #d2ad48;
+  color: #090b08;
+  font-family: Orbitron, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.2s;
+}
+.world-new-btn:hover {
+  background: #e7c65b;
+  transform: translateY(-2px);
+}
+@media (max-width: 900px) {
+  .world-new {
+    min-height: 540px;
+  }
+  .world-new::before {
+    background-size: auto 100%;
+    background-position: 66% center;
+  }
+  .world-new::after {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.72) 53%, rgba(0, 0, 0, 0.22) 100%);
+  }
+}
+@media (max-width: 720px) {
+  .world-new {
+    min-height: 600px;
+  }
+  .world-new-btn {
+    font-size: 12px;
+    padding: 16px 22px;
+  }
+}
+
+/* Ritmo verticale delle sezioni */
+@media (min-width: 769px) {
+  #chi-siamo {
+    padding-bottom: 74px;
+  }
+  #il-nostro-mondo {
+    padding-top: 73px;
+    padding-bottom: 63px;
+  }
+  #reclutamento {
+    padding-top: 63px;
+    padding-bottom: 74px;
+  }
+  #requisiti {
+    padding-top: 73px;
+  }
+}
+@media (max-width: 768px) {
+  #chi-siamo {
+    padding-bottom: 49px;
+  }
+  #il-nostro-mondo {
+    padding-top: 49px;
+    padding-bottom: 42px;
+  }
+  #reclutamento {
+    padding-top: 42px;
+    padding-bottom: 49px;
+  }
+  #requisiti {
+    padding-top: 49px;
+  }
+}

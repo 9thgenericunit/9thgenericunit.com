@@ -1,0 +1,56 @@
+/* 9GU — bottom: banner CTA + footer layout */
+.banner {
+  background:
+    radial-gradient(600px 240px at 90% 50%, #d2ad4826, transparent 70%),
+    linear-gradient(110deg, rgba(35, 47, 23, 0.9), rgba(15, 21, 17, 0.92)),
+    url("../img/image_03.svg") center/cover;
+}
+.banner .btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.footergrid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 48px;
+}
+.footer .brand span {
+  color: var(--olive);
+}
+.footer p {
+  max-width: 320px;
+}
+.footer a[href^="mailto"] {
+  color: var(--olive);
+  font-size: 14px;
+}
+.footer a[href^="mailto"]:hover {
+  text-decoration: underline;
+}
+.footerlinks {
+  flex-direction: column;
+  gap: 12px;
+}
+.footerlinks a:hover {
+  color: var(--olive);
+  transform: translateX(4px);
+}
+.footer-socials {
+  margin-top: 0;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 800px) {
+  .footergrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .banner .btn {
+    margin-top: 20px;
+  }
+}
