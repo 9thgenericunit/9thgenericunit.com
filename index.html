@@ -4,9 +4,9 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <title>9th Generic Unit | Clan italiano milsim ArmA Reforger</title>
+    <title>9GU – 9th Generic Unit | Clan italiano milsim ArmA Reforger</title>
     <meta
-      content="9th Generic Unit: clan italiano milsim su ArmA Reforger dal 2012. Operazioni tattiche, squadra organizzata e reclutamento aperto: entra nel nostro Discord."
+      content="9GU (9th Generic Unit): clan italiano milsim su ArmA Reforger dal 2012. Operazioni tattiche, squadra organizzata, reclutamento aperto: entra nel Discord."
       name="description"
     />
     <meta content="#000000" name="theme-color" />
@@ -15,9 +15,9 @@
     <meta content="website" property="og:type" />
     <meta content="9th Generic Unit" property="og:site_name" />
     <meta content="it_IT" property="og:locale" />
-    <meta content="9th Generic Unit | Clan italiano milsim ArmA Reforger" property="og:title" />
+    <meta content="9GU – 9th Generic Unit | Clan italiano milsim ArmA Reforger" property="og:title" />
     <meta
-      content="9th Generic Unit: clan italiano milsim su ArmA Reforger dal 2012. Operazioni tattiche, squadra organizzata e reclutamento aperto: entra nel nostro Discord."
+      content="9GU (9th Generic Unit): clan italiano milsim su ArmA Reforger dal 2012. Operazioni tattiche, squadra organizzata, reclutamento aperto: entra nel Discord."
       property="og:description"
     />
     <meta content="https://www.9thgenericunit.com/" property="og:url" />
@@ -29,15 +29,17 @@
       property="og:image:alt"
     />
     <meta content="summary_large_image" name="twitter:card" />
-    <meta content="9th Generic Unit | Clan italiano milsim ArmA Reforger" name="twitter:title" />
+    <meta content="9GU – 9th Generic Unit | Clan italiano milsim ArmA Reforger" name="twitter:title" />
     <meta
-      content="9th Generic Unit: clan italiano milsim su ArmA Reforger dal 2012. Operazioni tattiche, squadra organizzata e reclutamento aperto: entra nel nostro Discord."
+      content="9GU (9th Generic Unit): clan italiano milsim su ArmA Reforger dal 2012. Operazioni tattiche, squadra organizzata, reclutamento aperto: entra nel Discord."
       name="twitter:description"
     />
     <meta content="https://www.9thgenericunit.com/img/og-image.jpg" name="twitter:image" />
     <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png" />
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
     <link rel="preload" as="image" href="img/image_01.webp" fetchpriority="high" />
+    <link rel="preload" as="font" type="font/woff2" href="fonts/inter-latin-wght-normal.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="fonts/orbitron-latin-wght-normal.woff2" crossorigin />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -50,7 +52,6 @@
         "foundingDate": "2012",
         "email": "info@9thgenericunit.com",
         "sameAs": [
-          "https://discord.gg/exF5aSwakn",
           "https://www.instagram.com/9thgenericunit",
           "https://youtube.com/@9thgenericunit",
           "https://9thgenericunitshop.myspreadshop.it/"
@@ -74,6 +75,7 @@
     <link rel="stylesheet" href="css/08-footer.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Vai al contenuto</a>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
@@ -109,8 +111,7 @@
         ><button aria-expanded="false" aria-label="Apri menu" class="menu">☰ MENU</button>
         <div class="links" id="navlinks">
           <a href="#home">HOME</a><a href="#chi-siamo">CHI SIAMO</a><a href="#reclutamento">RECLUTAMENTO</a
-          ><a href="#requisiti">REQUISITI</a
-          ><a href="https://discord.gg/exF5aSwakn" rel="noopener" target="_blank">DISCORD</a
+          ><a href="#requisiti">REQUISITI</a><a data-discord rel="noopener" target="_blank">DISCORD</a
           ><a href="https://9thgenericunitshop.myspreadshop.it/" rel="noopener" target="_blank">SHOP</a
           ><a href="https://dashboard.9thgenericunit.com" class="dashboard-link" rel="noopener" target="_blank"
             >DASHBOARD</a
@@ -131,13 +132,7 @@
             target="_blank"
             title="YouTube"
             ><svg aria-hidden="true" class="ico ico-youtube"><use href="#i-youtube" /></svg></a
-          ><a
-            aria-label="Discord 9GU"
-            class="discord"
-            href="https://discord.gg/exF5aSwakn"
-            rel="noopener"
-            target="_blank"
-            title="Discord"
+          ><a aria-label="Discord 9GU" class="discord" data-discord rel="noopener" target="_blank" title="Discord"
             ><svg aria-hidden="true" class="ico ico-discord"><use href="#i-discord" /></svg
           ></a>
         </div>
@@ -148,7 +143,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main id="main">
       <div class="hero" id="home">
         <div class="wrap">
           <h1>
@@ -263,7 +258,7 @@
             </article>
           </div>
           <div class="actions">
-            <a class="btn" href="https://discord.gg/exF5aSwakn" rel="noopener" target="_blank"
+            <a class="btn" data-discord rel="noopener" target="_blank"
               >Entra su Discord<svg aria-hidden="true" class="ico ico-arrow"><use href="#i-arrow-ur" /></svg
             ></a>
           </div>
@@ -335,7 +330,7 @@
             </details>
           </div>
           <div class="actions">
-            <a class="btn" href="https://discord.gg/exF5aSwakn" rel="noopener" target="_blank"
+            <a class="btn" data-discord rel="noopener" target="_blank"
               >Fai la tua domanda su Discord<svg aria-hidden="true" class="ico ico-arrow">
                 <use href="#i-arrow-ur" /></svg
             ></a>
@@ -349,7 +344,7 @@
             <h2>LA TUA SQUADRA TI ASPETTA.</h2>
             <p>Entra nella community e preparati alla tua prossima missione.</p>
           </div>
-          <a class="btn" href="https://discord.gg/exF5aSwakn" rel="noopener" target="_blank"
+          <a class="btn" data-discord rel="noopener" target="_blank"
             >Entra su Discord<svg aria-hidden="true" class="ico ico-arrow"><use href="#i-arrow-ur" /></svg
           ></a>
         </div>
@@ -380,7 +375,7 @@
             <h4>LINK UTILI</h4>
             <div class="footerlinks">
               <a href="#chi-siamo">Chi siamo</a><a href="#reclutamento">Reclutamento</a><a href="#faq">FAQ</a>
-              <a href="https://discord.gg/exF5aSwakn" rel="noopener" target="_blank">Discord</a>
+              <a data-discord rel="noopener" target="_blank">Discord</a>
               <a href="https://9thgenericunitshop.myspreadshop.it/" rel="noopener" target="_blank">Shop</a>
               <a href="https://dashboard.9thgenericunit.com" rel="noopener" target="_blank">Dashboard</a>
             </div>
@@ -403,13 +398,7 @@
                   target="_blank"
                   title="YouTube"
                   ><svg aria-hidden="true" class="ico ico-youtube"><use href="#i-youtube" /></svg></a
-                ><a
-                  aria-label="Discord 9GU"
-                  class="discord"
-                  href="https://discord.gg/exF5aSwakn"
-                  rel="noopener"
-                  target="_blank"
-                  title="Discord"
+                ><a aria-label="Discord 9GU" class="discord" data-discord rel="noopener" target="_blank" title="Discord"
                   ><svg aria-hidden="true" class="ico ico-discord"><use href="#i-discord" /></svg
                 ></a>
               </div>
@@ -422,12 +411,13 @@
     <a
       aria-label="Entra nel server Discord"
       class="floating"
-      href="https://discord.gg/exF5aSwakn"
+      data-discord
       rel="noopener"
       target="_blank"
       title="Entra su Discord"
       ><svg aria-hidden="true" class="ico ico-discord"><use href="#i-discord" /></svg
     ></a>
+    <script src="js/discord.js" defer></script>
     <script src="js/main.js" defer></script>
   </body>
 </html>
