@@ -64,6 +64,8 @@
   --olive: #d2ad48;
   --white: #f0eee2;
   --muted: #b9b9a5;
+  --wrap-nav: min(1600px, 96%); /* navbar e footer: stessi bordi */
+  --wrap-wide: min(1400px, 90%); /* hero, "Il nostro mondo", membri: via di mezzo tra .wrap e l'header */
 }
 * {
   box-sizing: border-box;
@@ -194,6 +196,10 @@ nav {
 .hero .wrap {
   position: relative;
   z-index: 1;
+}
+.hero .wrap,
+.stripe .wrap {
+  width: var(--wrap-wide);
 }
 .eyebrow {
   color: var(--olive);

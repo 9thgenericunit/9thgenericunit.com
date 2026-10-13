@@ -1,6 +1,6 @@
 /* Header compatto 9GU - loghi originali incorporati */
 header nav.wrap {
-  width: min(1600px, 96%);
+  width: var(--wrap-nav);
   gap: clamp(10px, 1.4vw, 22px);
   min-height: 86px;
 }
