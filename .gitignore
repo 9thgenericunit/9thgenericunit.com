@@ -20,3 +20,5 @@
 *.iml
 out
 gens
+# dati privati di Search Console
+export/
