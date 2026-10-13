@@ -2,6 +2,10 @@
 :root {
   --gold-glow: 0 0 0 1px #d2ad4833, 0 18px 50px -18px #d2ad4859;
 }
+:root {
+  color-scheme: dark;
+  scrollbar-color: #4d581d #050805;
+}
 ::selection {
   background: var(--olive);
   color: #10150e;

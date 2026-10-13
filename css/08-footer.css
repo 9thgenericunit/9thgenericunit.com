@@ -9,9 +9,15 @@
   white-space: nowrap;
   flex-shrink: 0;
 }
+/* Sui desktop il footer ha gli stessi bordi della navbar; sotto resta la larghezza standard */
+@media (min-width: 1000px) {
+  .footer .wrap {
+    width: var(--wrap-nav);
+  }
+}
 .footergrid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-columns: 1.6fr 1fr 1fr auto; /* ultima colonna a filo con il bordo destro */
   gap: 48px;
 }
 .footer .brand span {
@@ -29,7 +35,8 @@
 }
 .footerlinks {
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
+  font-size: 14px;
 }
 .footerlinks a:hover {
   color: var(--olive);
@@ -47,8 +54,13 @@
 }
 @media (max-width: 800px) {
   .footergrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 32px;
+  }
+  /* brand e social a tutta larghezza, le due colonne di link affiancate */
+  .footergrid > :first-child,
+  .footergrid > :last-child {
+    grid-column: 1 / -1;
   }
   .banner .btn {
     margin-top: 20px;

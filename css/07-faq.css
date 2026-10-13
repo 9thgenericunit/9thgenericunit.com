@@ -1,6 +1,29 @@
 /* Domande frequenti: accordion nativo con <details>, senza JS */
+/* Separatore da "Cosa ti serve": linea sfumata con rombo oro, come i punti elenco */
 #faq {
-  padding-top: 20px;
+  position: relative;
+  padding-top: 73px;
+}
+#faq::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(1160px, 90%);
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, var(--line) 22%, var(--olive) 50%, var(--line) 78%, transparent);
+}
+#faq::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  background: var(--olive);
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 0 0 0 7px #000;
 }
 .faq {
   display: grid;
@@ -59,7 +82,7 @@
 }
 @media (max-width: 768px) {
   #faq {
-    padding-top: 0;
+    padding-top: 49px;
   }
   .faq summary {
     padding: 18px 20px;

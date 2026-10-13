@@ -23,8 +23,30 @@
   z-index: -1;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.08) 40%, transparent 70%);
 }
+/* Schermi grandi (27" 2K e oltre): la foto resta in un riquadro centrato, sfumato ai bordi,
+   così testo e immagine restano bilanciati rispetto al centro della pagina. */
+@media (min-width: 1800px) {
+  .world-new::before {
+    inset: 0 auto;
+    left: 50%;
+    width: 1800px;
+    transform: translateX(-50%);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent),
+      linear-gradient(180deg, transparent, #000 8%, #000 92%, transparent);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent),
+      linear-gradient(180deg, transparent, #000 8%, #000 92%, transparent);
+    mask-composite: intersect;
+  }
+  .world-new::after {
+    inset: 0 auto;
+    left: 50%;
+    width: 1800px;
+    transform: translateX(-50%);
+  }
+}
 .world-new-content {
-  width: min(1160px, 90%);
+  width: var(--wrap-wide);
   margin-inline: auto;
 }
 .world-new-copy {

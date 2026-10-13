@@ -39,7 +39,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: min(1160px, 90%);
+  width: var(--wrap-wide);
   text-align: left;
 }
 .members-content .eyebrow {
