@@ -1,0 +1,196 @@
+/* 9GU — polish layer: depth, hover states, rhythm. Overrides earlier blocks, no markup dependency. */
+:root {
+  --gold-glow: 0 0 0 1px #d2ad4833, 0 18px 50px -18px #d2ad4859;
+}
+::selection {
+  background: var(--olive);
+  color: #10150e;
+}
+section,
+.hero {
+  scroll-margin-top: 86px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  background: radial-gradient(1200px 600px at 85% -10%, #2a3317 0%, transparent 60%), #000;
+}
+header {
+  background: #050805d9;
+  border-bottom-color: #4d581d99;
+  box-shadow: 0 10px 40px -20px #000;
+}
+.links a {
+  position: relative;
+  padding-block: 6px;
+}
+.links a:not(.dashboard-link):after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--olive);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s;
+}
+.links a:hover:after {
+  transform: scaleX(1);
+}
+.hero h1 {
+  text-shadow: 0 6px 40px #000c;
+}
+.hero h1 em {
+  background: linear-gradient(90deg, #f0d789, #d2ad48 60%, #a98a2e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.eyebrow:before {
+  content: "";
+  width: 34px;
+  height: 2px;
+  background: var(--olive);
+}
+.btn {
+  box-shadow: 0 10px 30px -12px #d2ad4888;
+}
+.btn.ghost {
+  box-shadow: none;
+  border-color: #d2ad4899;
+  backdrop-filter: blur(6px);
+}
+.stripe {
+  background: linear-gradient(90deg, #000, #12170b, #000);
+}
+.heading h2,
+.banner h2 {
+  text-wrap: balance;
+}
+.tile,
+.step {
+  position: relative;
+  transition:
+    transform 0.25s,
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+.tile {
+  background: linear-gradient(160deg, #2f3720 0%, #1b2113 100%);
+}
+.step {
+  background: linear-gradient(160deg, #1b221c 0%, #0e130f 100%);
+}
+.tile:before,
+.step:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 3px;
+  width: 56px;
+  background: var(--olive);
+  transition: width 0.3s;
+}
+.tile:hover,
+.step:hover {
+  transform: translateY(-5px);
+  border-color: var(--olive);
+  box-shadow: var(--gold-glow);
+}
+.tile:hover:before,
+.step:hover:before {
+  width: 100%;
+}
+.step b {
+  font-family: Orbitron, Arial, sans-serif;
+  font-size: 40px;
+  display: block;
+  margin-bottom: 6px;
+  opacity: 0.9;
+}
+.requirements {
+  background: linear-gradient(160deg, #2f3720, #1b2113);
+}
+.requirements ul {
+  list-style: none;
+  padding: 0;
+}
+.requirements li {
+  padding-left: 28px;
+  position: relative;
+  color: #dfe2d3;
+}
+.requirements li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 10px;
+  height: 10px;
+  background: var(--olive);
+  transform: rotate(45deg);
+}
+.banner {
+  padding: 84px 0;
+}
+.banner h2 {
+  text-shadow: 0 4px 30px #000a;
+}
+.footer {
+  border-top: 1px solid var(--line);
+  background: linear-gradient(180deg, #0b0f0a, #050705);
+}
+.footer h4 {
+  font-family: Orbitron, Arial, sans-serif;
+  letter-spacing: 0.14em;
+  font-size: 13px;
+  color: var(--olive);
+  margin: 0 0 16px;
+}
+.footer p {
+  margin: 14px 0;
+}
+.footerlinks a {
+  color: var(--muted);
+  transition: color 0.2s;
+}
+.floating {
+  background: var(--olive);
+  color: #141713;
+  animation: pulse 2.8s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow:
+      0 0 0 0 #d2ad4866,
+      0 8px 30px #0009;
+  }
+  70%,
+  100% {
+    box-shadow:
+      0 0 0 18px #d2ad4800,
+      0 8px 30px #0009;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+@media (max-width: 768px) {
+  .step b {
+    font-size: 32px;
+  }
+  .banner {
+    padding: 60px 0;
+  }
+}

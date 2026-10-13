@@ -1,0 +1,67 @@
+/* Membri operativi: sfondo fotografico immersivo */
+.members-background-section {
+  position: relative;
+  isolation: isolate;
+  min-height: 680px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  padding: 90px 0 42px;
+  background: #0b100d;
+}
+.members-background-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: url("../img/image_05.webp") center 46% / cover no-repeat;
+  filter: contrast(1.09) saturate(0.88) brightness(0.94);
+}
+.members-background-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+      90deg,
+      rgba(6, 12, 8, 0.98) 0%,
+      rgba(7, 13, 9, 0.93) 25%,
+      rgba(7, 13, 9, 0.76) 41%,
+      rgba(7, 13, 9, 0.22) 70%,
+      rgba(7, 13, 9, 0.07) 100%
+    ),
+    linear-gradient(0deg, rgba(6, 12, 8, 0.9), transparent 42%);
+}
+.members-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: min(1160px, 90%);
+  text-align: left;
+}
+.members-content .eyebrow {
+  letter-spacing: 0.22em;
+}
+.members-content h2 {
+  font-size: clamp(38px, 6vw, 76px);
+  line-height: 1.1;
+  margin: 18px 0 20px;
+  max-width: 630px;
+}
+.members-description {
+  color: #d3d5c9;
+  line-height: 1.85;
+  max-width: 500px;
+  font-size: 17px;
+}
+@media (max-width: 700px) {
+  .members-content h2 {
+    font-size: clamp(34px, 9vw, 56px);
+  }
+  .members-description {
+    font-size: 15px;
+  }
+}

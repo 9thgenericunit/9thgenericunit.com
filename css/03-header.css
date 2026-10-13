@@ -1,0 +1,178 @@
+/* Header compatto 9GU - loghi originali incorporati */
+header nav.wrap {
+  width: min(1600px, 96%);
+  gap: clamp(10px, 1.4vw, 22px);
+  min-height: 86px;
+}
+header .brand-label {
+  font-family: Orbitron, Arial, sans-serif;
+  font-size: clamp(10px, 1.05vw, 15px);
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  white-space: nowrap;
+  color: var(--white);
+}
+header .links {
+  flex: 1;
+  justify-content: center;
+  gap: clamp(9px, 1.2vw, 22px);
+  font-size: clamp(9px, 0.73vw, 12px);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+header .socials {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+}
+header .socials a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6b724e;
+  background: #ffffff0b;
+  color: #e4e4d6;
+  font-size: 15px;
+}
+header .socials a:hover {
+  background: #d2ad48;
+  color: #141713;
+  border-color: #d2ad48;
+  transform: translateY(-2px);
+}
+header .links a.dashboard-link {
+  color: #d2ad48;
+}
+
+header .links a.dashboard-link:hover {
+  color: #4d581d;
+}
+.header-games {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-left: 1px solid #586039;
+  padding-left: 17px;
+  flex-shrink: 0;
+}
+.header-games a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-games img {
+  display: block;
+  width: auto;
+  object-fit: contain;
+  max-width: 92px;
+  max-height: 37px;
+}
+.header-games a:last-child img {
+  max-width: 70px;
+  max-height: 38px;
+}
+@media (max-width: 1180px) {
+  header .brand-label {
+    font-size: 11px;
+  }
+  header .brand img {
+    width: 48px;
+    height: 48px;
+  }
+  header .links {
+    gap: 9px;
+    font-size: 9px;
+  }
+  header .socials {
+    gap: 4px;
+  }
+  header .socials a {
+    width: 30px;
+    height: 30px;
+  }
+  .header-games {
+    gap: 7px;
+    padding-left: 10px;
+  }
+  .header-games img {
+    max-width: 75px;
+  }
+  .header-games a:last-child img {
+    max-width: 56px;
+  }
+}
+@media (max-width: 950px) {
+  header nav.wrap {
+    min-height: 74px;
+    flex-wrap: nowrap;
+  }
+  header .menu {
+    display: block;
+    margin-left: auto;
+    order: 4;
+  }
+  header .links {
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    background: #0b0e0d;
+    flex-direction: column;
+    padding: 30px;
+    align-items: stretch;
+    gap: 22px;
+    font-size: 12px;
+  }
+  header .links.open {
+    display: flex;
+  }
+  header .socials {
+    margin-left: auto;
+  }
+  header .header-games {
+    border-left: 0;
+    padding-left: 0;
+  }
+  header .header-games img {
+    max-width: 65px;
+    max-height: 29px;
+  }
+  header .header-games a:last-child img {
+    max-width: 49px;
+    max-height: 29px;
+  }
+}
+@media (max-width: 600px) {
+  header .brand-label {
+    font-size: 10px;
+    max-width: 105px;
+    white-space: normal;
+    line-height: 1.4;
+  }
+  header .socials {
+    display: none;
+  }
+  .header-games {
+    gap: 6px;
+  }
+  .header-games img {
+    max-width: 55px;
+    max-height: 25px;
+  }
+  .header-games a:last-child img {
+    max-width: 40px;
+    max-height: 25px;
+  }
+  header .brand img {
+    width: 44px;
+    height: 44px;
+  }
+  header nav.wrap {
+    gap: 8px;
+  }
+}
