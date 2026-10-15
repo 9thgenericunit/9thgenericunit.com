@@ -1,0 +1,56 @@
+/* Pagina /novita: annuncio breve, una sola schermata che rimanda al sito principale */
+.hero {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+.hero .brand {
+  margin-bottom: 28px;
+}
+.hero .brand img {
+  width: 84px;
+  height: 84px;
+}
+/* "NUOVO GIOCO." ha lettere più larghe di "ONE UNIT.": serve più spazio per restare su una riga */
+.hero h1 {
+  max-width: none;
+  font-size: clamp(44px, 7vw, 108px);
+}
+.hero p {
+  font-size: clamp(17px, 1.5vw, 21px);
+}
+/* Il bottone verso il sito principale è l'azione principale della pagina */
+.hero .btn:not(.ghost) {
+  padding: 24px 44px;
+  font-size: clamp(14px, 1.3vw, 18px);
+  box-shadow: 0 14px 44px -10px #d2ad48aa;
+  animation: cta-pulse 2.6s infinite;
+}
+.hero .btn:not(.ghost) .ico-arrow {
+  width: 1.5em;
+  height: 1.5em;
+}
+.hero .btn.ghost {
+  padding: 24px 32px;
+  font-size: clamp(12px, 1.1vw, 15px);
+}
+@keyframes cta-pulse {
+  0% {
+    box-shadow:
+      0 0 0 0 #d2ad4880,
+      0 14px 44px -10px #d2ad48aa;
+  }
+  70%,
+  100% {
+    box-shadow:
+      0 0 0 22px #d2ad4800,
+      0 14px 44px -10px #d2ad48aa;
+  }
+}
+@media (max-width: 600px) {
+  .hero .actions .btn {
+    width: 100%;
+  }
+  .hero .btn:not(.ghost) {
+    padding: 22px 24px;
+  }
+}
